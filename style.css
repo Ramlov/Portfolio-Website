@@ -1,0 +1,114 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.typewriter-container {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.typewriter-text {
+    overflow: hidden;
+    white-space: nowrap;
+    color: #fff;
+    border-right: 2px solid #fff;
+    font-size: 24px;
+    animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.social-links li a:hover {
+    text-decoration: underline;
+}
+
+.projects {
+    margin: 40px auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.project-card {
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 18px;
+}
+
+.project-card a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
