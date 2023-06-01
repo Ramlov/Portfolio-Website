@@ -11,7 +11,7 @@ The project folder consists of the following files:
 - `script.js`: The JavaScript file that controls the typewriter effect on the homepage.
 
 
-## <a href="https://ramlov.org">Live Demo</a><
+## <a href="https://ramlov.org">Live Demo</a>
 
 
 
