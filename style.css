@@ -8,9 +8,23 @@ body {
     min-height: 100vh;
 }
 
+
 h1 {
     font-size: 36px;
     margin-bottom: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+
+.container{
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .typewriter-container {
@@ -111,4 +125,86 @@ footer {
 
 .project-card a:hover {
     text-decoration: underline;
+}
+
+#expander {
+	display: none;
+}
+
+.spoiler .expander:before {
+  content: '[show image]'
+}
+
+.spoiler #expand {
+  display: none;
+}
+
+.spoiler #expand:checked + .expander:before {
+  content: '[hide image]';
+}
+
+.spoiler #expand:checked ~ .spoiler-content {
+	display: block;
+}
+
+.spoiler .spoiler-content {
+	display: none;
+}
+
+.image {
+    height: auto;
+    width: 60%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.navbar-menu.active {
+    flex-direction: row;
+}
+
+.navbar-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-menu ul li {
+    margin-right: 10px;
+}
+
+.navbar-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-toggle {
+    display: none;
 }
